@@ -1,0 +1,69 @@
+Arguments: 
+  /Users/rika/.anyenv/envs/nodenv/versions/16.17.0/bin/node /Users/rika/.anyenv/envs/nodenv/versions/16.17.0/bin/yarn add -D @sveltejs/kit/vite
+
+PATH: 
+  /Users/rika/.anyenv/envs/nodenv/versions/16.17.0/bin:/Users/rika/.anyenv/envs/nodenv/libexec:/Users/rika/.anyenv/envs/nodenv/plugins/nodenv-vars/bin:/Users/rika/.anyenv/envs/nodenv/plugins/node-build/bin:/Users/rika/.anyenv/envs/nodenv/plugins/node-build-update-defs/bin:/opt/homebrew/opt/php@8.0/bin:/Users/rika/.anyenv/envs/nodenv/shims:/Users/rika/.anyenv/envs/nodenv/bin:~/.composer/vendor/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/opt/php@8.0/bin:/Users/rika/.anyenv/envs/nodenv/shims:/Users/rika/.anyenv/envs/nodenv/bin:~/.composer/vendor/bin:/opt/homebrew/bin:/opt/homebrew/sbin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.17.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@sveltejs%2fkit/vite: Request "https://registry.yarnpkg.com/@sveltejs%2fkit/vite" returned a 405
+      at Request.params.callback [as _callback] (/Users/rika/.anyenv/envs/nodenv/versions/16.17.0/lib/node_modules/yarn/lib/cli.js:66154:18)
+      at Request.self.callback (/Users/rika/.anyenv/envs/nodenv/versions/16.17.0/lib/node_modules/yarn/lib/cli.js:140890:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (/Users/rika/.anyenv/envs/nodenv/versions/16.17.0/lib/node_modules/yarn/lib/cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (/Users/rika/.anyenv/envs/nodenv/versions/16.17.0/lib/node_modules/yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1358:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+  	"name": "svelte-sample-test",
+  	"version": "0.0.1",
+  	"private": true,
+  	"scripts": {
+  		"dev": "vite dev",
+  		"build": "vite build",
+  		"preview": "vite preview",
+  		"test": "playwright test",
+  		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+  		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+  		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+  		"format": "prettier --plugin-search-dir . --write ."
+  	},
+  	"devDependencies": {
+  		"@playwright/test": "1.25.0",
+  		"@sveltejs/adapter-auto": "next",
+  		"@sveltejs/kit": "next",
+  		"@typescript-eslint/eslint-plugin": "^5.27.0",
+  		"@typescript-eslint/parser": "^5.27.0",
+  		"eslint": "^8.16.0",
+  		"eslint-config-prettier": "^8.3.0",
+  		"eslint-plugin-svelte3": "^4.0.0",
+  		"prettier": "^2.6.2",
+  		"prettier-plugin-svelte": "^2.7.0",
+  		"svelte": "^3.44.0",
+  		"svelte-check": "^2.7.1",
+  		"svelte-preprocess": "^4.10.6",
+  		"tslib": "^2.3.1",
+  		"typescript": "^4.7.4",
+  		"vite": "^3.1.0"
+  	},
+  	"type": "module"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
